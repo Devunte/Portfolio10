@@ -1,15 +1,14 @@
-import React from "react";
-import profile from "../../assets/images/1998.webp";
+// src/components/About/About.js
 
-function About(){
-    return(
-        <div className="container">
-            <div className="row">
-                <img src={profile} className="col-md-3 col-sm-6 col-xs-12 img-responsive" />
-                <p className="col-md-9 col-sm-6 col-xs-12">Text here Text here Text here Text here Text here Text here Text here </p>
-            </div>
-        </div>
-    );
-}
+import React from 'react';
+
+const About = () => {
+  return (
+    <div>
+      <h2>About</h2>
+      <p>This is the about page.</p>
+    </div>
+  );
+};
 
 export default About;
