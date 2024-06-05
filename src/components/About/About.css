@@ -1,0 +1,57 @@
+/* src/components/About/About.css */
+
+.about-container {
+    padding: 20px;
+  }
+  
+  .work-container {
+    margin-top: 40px;
+  }
+  
+  .work-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .work-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .work-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .work-card p {
+    margin-bottom: 10px;
+  }
+  
+  .work-card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .work-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .deploy-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .deploy-button:hover {
+    background-color: #0056b3;
+  }
+  

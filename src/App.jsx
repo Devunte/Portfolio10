@@ -1,51 +1,25 @@
-import React, { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-import About from './components/About/About';
-// import Portfolio from './components/Portfolio/Portfolio';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import './index.css';
+import './app.css';
 import Nav from './components/Nav/Nav';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <Router>
-      <div className="App">
-        <Nav />
-        <header className="App-header">
-          <div className="logo-container">
-            <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-              <img src={viteLogo} className="logo" alt="Vite logo" />
-            </a>
-            <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
-              <img src={reactLogo} className="logo react" alt="React logo" />
-            </a>
-          </div>
-          <h1>Vite + React</h1>
-          <div className="card">
-            <button onClick={() => setCount((count) => count + 1)}>
-              count is {count}
-            </button>
-            <p>
-              Edit <code>src/App.js</code> and save to test HMR
-            </p>
-          </div>
-          <p className="read-the-docs">
-            Click on the Vite and React logos to learn more
-          </p>
-        </header>
-        <main>
-          <Routes>
-            <Route path="/" element={<div>Home</div>} />
-            <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-          </Routes>
-        </main>
+    <>
+      <Nav />
+      <div className="about-me-container">
+        <img src="Avatar.jpg" alt="Avatar" className="profile-picture" />
+        <h2 className="about-me-heading">About Me</h2>
+        <p className="about-me-content">
+          Transitioning from marketing to full stack web development at SMU, I bring a determined mindset honed through my experience as a college athlete. My aspiration is to thrive in a company setting, leveraging my newfound skills to their fullest potential. Through months of dedicated study, I'm poised to achieve my career and financial objectives. The discipline instilled from managing multiple tasks under pressure, whether on the field or in the classroom, serves as a solid foundation for my journey into the tech industry. With each challenge, I am committed to delivering valuable performance and continuously pushing the boundaries of my capabilities.
+        </p>
       </div>
-    </Router>
+      <Outlet /> {/* This will render the child routes */}
+    </>
   );
 }
 
 export default App;
+
+
