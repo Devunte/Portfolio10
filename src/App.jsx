@@ -1,7 +1,7 @@
 
 import { Outlet } from 'react-router-dom';
 import './index.css';
-import './app.css';
+import './App.css';
 import Nav from './components/Nav/Nav';
 
 function App() {
