@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devunte Dawson's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .navbar {
+            background-color: #28a745; /* Green */
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        header {
+            background-color: #343a40; /* Dark grey */
+            padding: 1rem 0;
+        }
+        header h1, header p {
+            color: #fff;
+        }
+        section {
+            padding: 4rem 0;
+        }
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            color: #212529;
+        }
+        .card {
+            background-color: #fff;
+            border: none;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .card-body h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .card-body p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .btn-success {
+            background-color: #28a745; /* Green */
+            border: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 0.8rem 2rem;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-success:hover {
+            background-color: #218838; /* Darker green */
+        }
+        footer {
+            background-color: #343a40; /* Dark grey */
+            color: #fff;
+            padding: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Devunte Dawson</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="container-fluid py-5 text-center" style="background-color: #343a40; color: #fff;">
+        <div class="container">
+            <h1>Welcome to Devunte Dawson's Portfolio</h1>
+            <p>A showcase of my work and projects.</p>
+        </div>
+    </section>
+
+    <section id="about" class="container py-5">
+        <div class="container text-center">
+            <h2>About Me</h2>
+            <p>Hello! I'm Devunte, a web developer with a background in marketing, business, and coding.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="container py-5">
+        <div class="container text-center">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4 shadow">
+                        <div class="card-body">
+                            <a href="https://the-job-seeker-lqty.onrender.com" class="project-link text-dark">
+                                <h3>The Job Seeker</h3>
+                                <p>Connecting job seekers with employers through an intuitive platform.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4 shadow">
+                        <div class="card-body">
+                            <a href="https://fitness-for-u-pxjn.onrender.com" class="project-link text-dark">
+                                <h3>Fitness For U</h3>
+                                <p>A platform for gym beginners to discover and share workouts.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4 shadow">
+                        <div class="card-body">
+                            <a href="https://devunte.github.io/Meal-Plan/" class="project-link text-dark">
+                                <h3>Meal Plan</h3>
+                                <p>A simplified meal planning platform for health enthusiasts.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container py-5">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <form id="contact-form" class="mx-auto" style="max-width: 600px;">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" class="form-control" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Devunte Dawson</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling using jQuery easing
+        $('a.nav-link').on('click', function(event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+        // Form validation
+        $('#contact-form').submit(function(event) {
+            event.preventDefault();
+            var name = $('#name').val().trim();
+            var email = $('#email').val().trim();
+            var message = $('#message').val().trim();
+
+            if (name === '' || email === '' || message === '') {
+                alert('Please fill out all fields.');
+                return;
+            }
+
+            // You can add further validation or submission logic here
+            // For now, just alert success
+            alert('Message sent successfully!');
+            $('#name').val('');
+            $('#email').val('');
+            $('#message').val('');
+        });
+
+        // Hover effect on project cards
+        $('.card').hover(
+            function() {
+                $(this).addClass('shadow-lg').css('cursor', 'pointer');
+            },
+            function() {
+                $(this).removeClass('shadow-lg');
+            }
+        );
+    </script>
+</body>
+</html>
